@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {DefaultLayoutModule} from "./layouts/default/default.module";
 import {StaticLayoutModule} from "./layouts/static/static.module";
+import { UsersComponent } from './modules/users/users.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        UsersComponent,
     ],
     imports: [
         BrowserModule,

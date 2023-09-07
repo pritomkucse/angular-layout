@@ -13,6 +13,10 @@ const routes: Routes = [
             {
                 path: '',
                 component: HomeComponent,
+            }, {
+                path: 'users',
+                //component: UsersComponent,
+                loadChildren: () => import('./routes/lazy-user.module').then(m => m.LazyUserModule)
             }
         ]
     }, {
